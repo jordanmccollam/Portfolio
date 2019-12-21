@@ -20,18 +20,22 @@
 
 <body>
 
-    <a href="./index.html"><img src="./logo.png" alt="logo" width="100"
-            class="p-3 logo border-bottom border-primary"></a>
+    <!-- SIDE MENU -->
+    <div class="side-menu">
+        <a href="./index.html"><img src="./images/logo.png" alt="logo" width="100"
+                class="p-3 logo border-bottom border-primary"></a>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="#about" class="bg-primary" id="about-tab"><i class="fas fa-user-circle fa-2x"></i></a>
-        <a href="#projects" class="bg-primary" id="projects-tab"><i class="fas fa-project-diagram fa-2x"></i></a>
-        <a href="#contact" class="bg-primary" id="contact-tab"><i class="fas fa-envelope fa-2x"></i></a>
-        <a href="https://github.com/jordanmccollam" target="blank" class="bg-primary" id="github-tab"><i
-                class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/jordan-mccollam-8141a618a/" target="blank" class="bg-primary"
-            id="linkedin-tab"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <div id="mySidenav" class="sidenav">
+            <a href="#about" class="bg-primary" id="about-tab"><i class="fas fa-user-circle fa-2x"></i></a>
+            <a href="#projects" class="bg-primary" id="projects-tab"><i class="fas fa-project-diagram fa-2x"></i></a>
+            <a href="#contact" class="bg-primary" id="contact-tab"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="https://github.com/jordanmccollam" target="blank" class="bg-primary" id="github-tab"><i
+                    class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/jordan-mccollam-8141a618a/" target="blank" class="bg-primary"
+                id="linkedin-tab"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
     </div>
+
 
     <div class="container-fluid">
 
@@ -43,7 +47,7 @@
                 <h2>Full Stack Developer</h2>
             </div>
             <div class="col-lg-2 text-secondary d-none d-lg-block">
-                <i class="fas fa-user-circle about-icon"></i>
+                <i class="fas fa-user-circle header-icon"></i>
             </div>
         </div>
 
@@ -54,7 +58,7 @@
                 <div class="col-lg-6 text-light">
                     <h3 class="font-primary border-bottom border-light">About Jordan McCollam</h3>
                     <p>
-                        Husband to the beautiful Leesha McCollam. 
+                        Husband to the beautiful Leesha McCollam.
                         <br>
                         Proud owner of a cat that thinks he's a dog, Frank.
                         <br>
@@ -64,25 +68,90 @@
                             Now a Full Stack Developer,
                         </span>
                         <br>
-                        with a <span class="text-danger">passion</span> for code and a <span class="text-success">drive</span> to make a difference.
+                        with a <span class="text-danger">passion</span> for code and a <span
+                            class="text-success">drive</span> to make a difference.
                     </p>
                 </div>
                 <div class="col-lg-1"></div>
 
-                <div class="col-5 text-light text-left">
-                    <img src="./vandy.png" alt="vanderbilt" width="75" class="float-left mr-5">
+                <!-- Education and resume -->
+                <div class="col-lg-5 text-light text-right">
+                    <h3 class="font-primary border-bottom border-light">Education</h3>
+                    <img src="./images/vandy.png" alt="vanderbilt" width="75" class="float-left">
                     <p>
-                        Certified in Full Stack Development 
+                        Certified in Full Stack Development
                         <br>
                         by the Vanderbilt Coding Bootcamp
                         <br>
                         Nashvile, TN | 2019-2020
                     </p>
-                    <button class="btn btn-block btn-outline-info rounded rounded-pill">Resume.docx <i class="far fa-file-word"></i></button>
-                    <button class="btn btn-block btn-outline-danger rounded rounded-pill">Resume.pdf <i class="far fa-file-pdf"></i></button>
+
+                    <img src="./images/aspnet.png" alt="aspnet" width="75" class="float-left">
+                    <p>
+                        The Complete ASP.NET MVC 5 Course
+                        <br>
+                        by Mosh Hamedani
+                        <br>
+                        <a href="https://www.udemy.com/course/the-complete-aspnet-mvc-5-course/" target="blank"
+                            class="text-light">udemy.com</a> | 2019-2020
+                    </p>
+
+                    <button class="btn btn-block btn-outline-info rounded rounded-pill">Resume.docx <i
+                            class="far fa-file-word"></i></button>
+                    <button class="btn btn-block btn-outline-danger rounded rounded-pill">Resume.pdf <i
+                            class="far fa-file-pdf"></i></button>
                 </div>
             </div>
         </div>
+
+        <!-- PROJECTS PAGE -->
+        <!-- Header -->
+        <div class="row mt-5 pt-5" id="projects">
+            <div class="col-lg-10 font-primary text-right text-secondary">
+                <h1 class="display-2">Projects</h1>
+            </div>
+            <div class="col-lg-2 text-secondary d-none d-lg-block">
+                <i class="fas fa-project-diagram fa-10x"></i>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container">
+            <div class="row mb-5 pb-5 font-primary">
+
+                <!-- THE BUG TRACKER -->
+                <div class="col-md-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://thebugtracker.herokuapp.com/" target="blank">
+                            <div class="bar">
+                                <h6 class="pt-1">The Bug Tracker</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/bugtracker.png" alt="project">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- READY UP -->
+                <div class="col-md-6 project-column mt-4">
+                    <div class="project-container">
+                        <a href="https://gamersreadyup.herokuapp.com/" target="blank">
+                            <div class="bar">
+                                <h6 class="pt-1">Ready Up</h6>
+                                <i class="red-dot"></i>
+                                <i class="yellow-dot"></i>
+                                <i class="green-dot"></i>
+                            </div>
+                            <img src="./images/readyUp.png" alt="project">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     </div>
 
