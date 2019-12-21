@@ -1,20 +1,32 @@
-.vertical-menu {
-    width: 150px;
+#mySidenav a {
+    position: absolute;
+    left: -50px;
+    transition: 0.3s;
+    padding: 13px;
+    width: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    text-align: end;
+    color: #4e5d6c;
 }
 
-.vertical-menu a {
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
+.logo {
+    position: absolute;
 }
 
-.vertical-menu a:hover {
-    /* Dark grey background on mouse-over */
-    /* background-color: #ccc; */
+#mySidenav a:hover {
+    left: 0;
 }
 
-.vertical-menu a.active {
-    /* Add a green color to the "active/current" link */
-    /* background-color: #4CAF50; */
-    /* color: white; */
+#about-tab {
+    top: 100px;
+}
+
+#projects-tab {
+    top: 180px;
+}
+
+#contact-tab {
+    top: 260px;
 }
