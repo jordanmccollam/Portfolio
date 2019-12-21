@@ -1,0 +1,14 @@
+.bounce {
+    position: absolute;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {top: 0px}
+    25% {top: 5px}
+    50% {top: 5px}
+    75% {top: 5px}
+    100% {top: 0px}
+}
