@@ -1,3 +1,8 @@
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 #mySidenav a {
     position: absolute;
     left: -30px;
@@ -9,10 +14,12 @@
     border-radius: 0 5px 5px 0;
     text-align: end;
     color: #2b3e50;
+    z-index: 1;
 }
 
 .logo {
     position: absolute;
+    z-index: 1;
 }
 
 #mySidenav a:hover {
@@ -22,11 +29,23 @@
 #about-tab {
     top: 100px;
 }
-
 #projects-tab {
     top: 180px;
 }
-
 #contact-tab {
     top: 260px;
+}
+#github-tab {
+    top: 340px;
+}
+#linkedin-tab {
+    top: 420px;
+}
+
+.font-primary {
+    font-family: 'Anton', sans-serif;
+}
+
+.about-icon {
+    font-size: 20vw;
 }
