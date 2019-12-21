@@ -1,14 +1,14 @@
 #mySidenav a {
     position: absolute;
-    left: -50px;
+    left: -30px;
     transition: 0.3s;
     padding: 13px;
-    width: 120px;
+    width: 100px;
     text-decoration: none;
     font-size: 20px;
     border-radius: 0 5px 5px 0;
     text-align: end;
-    color: #4e5d6c;
+    color: #2b3e50;
 }
 
 .logo {
