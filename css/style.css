@@ -65,9 +65,18 @@ a:hover {
     font-size: 20vw;
 }
 
-.project-column:nth-child(odd) {
-    display: flex;
-    justify-content: flex-end;
+@media only screen and (max-width: 1200px) {
+    .project-column {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .project-column:nth-child(odd) {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .project-container {
