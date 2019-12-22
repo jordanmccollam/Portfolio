@@ -124,4 +124,30 @@ i.green-dot {
 .project-container img {
     width: 362px;
     height: 210px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-hover {
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+    background-color: #1a2631;
+    transition: 0.3s;
+    z-index: 3;
+}
+
+.project-hover img {
+    opacity: 0.2;
+}
+
+.project-hover:hover {
+    opacity: 1;
+}
+
+.project-hover ul {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    z-index: 5;
 }
