@@ -151,3 +151,8 @@ i.green-dot {
     top: 15%;
     z-index: 5;
 }
+
+input, textarea {
+    background-color: #1a2631 !important;  
+    color: inherit !important;  
+}
